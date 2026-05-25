@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  /* =========================
+     LIGHT THEME
+  ========================= */
+  :root {
+    /* Backgrounds */
+    --bg: #f5f7fb;
+    --bg-app: #eef1f6;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f7f9fc;
+    --bg-chat: #fdfdfd;
+    --bg-active: #edf2f7;
+
+    /* Layout */
+    --nav-bar: rgba(255, 255, 255, 0.75);
+    --sidebar: #ffffff;
+    --header: rgba(255, 255, 255, 0.7);
+
+    /* Text */
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --text-muted: #9ca3af;
+    --text-inverse: #ffffff;
+
+    /* Brand */
+    --primary: #ff6b4a;
+    --primary-hover: #ff825f;
+    --accent: #ff9f80;
+
+    /* Borders */
+    --border: #e5e7eb;
+    --border-light: #f1f5f9;
+
+    /* Effects */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    /* Glass */
+    --glass: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.4);
+
+    /* Radius */
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    /* Animation */
+    --transition: all 0.3s ease;
+  }
+
+  /* =========================
+     DARK THEME
+  ========================= */
+  [data-theme="dark"] {
+    /* Backgrounds */
+    --bg: #0a0f14;
+    --bg-app: #0d141b;
+    --bg-primary: #111827;
+    --bg-secondary: #1a2330;
+    --bg-chat: #0f1720;
+    --bg-active: #1e293b;
+
+    /* Layout */
+    --nav-bar: rgba(17, 24, 39, 0.75);
+    --sidebar: #111827;
+    --header: rgba(17, 24, 39, 0.7);
+
+    /* Text */
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --text-inverse: #111827;
+
+    /* Brand */
+    --primary: #ff6b4a;
+    --primary-hover: #ff825f;
+    --accent: #ff9f80;
+
+    /* Borders */
+    --border: #243041;
+    --border-light: #1e293b;
+
+    /* Effects */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.45);
+
+    /* Glass */
+    --glass: rgba(17, 24, 39, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.05);
+
+    /* Radius */
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    /* Animation */
+    --transition: all 0.3s ease;
+  }
+}
