@@ -1,103 +1,131 @@
 @import "tailwindcss";
 
 @layer base {
-  /* =========================
-     LIGHT THEME
-  ========================= */
   :root {
     /* Backgrounds */
-    --bg: #f5f7fb;
-    --bg-app: #eef1f6;
+    --bg: #f5f9fb;
+    --bg-app: #eef5f7;
     --bg-primary: #ffffff;
-    --bg-secondary: #f7f9fc;
-    --bg-chat: #fdfdfd;
-    --bg-active: #edf2f7;
+    --bg-secondary: #f7fbfc;
+    --bg-chat: #fcffff;
+    --bg-active: #e8f6f5;
 
     /* Layout */
-    --nav-bar: rgba(255, 255, 255, 0.75);
+    --nav-bar: rgba(255, 255, 255, 0.72);
     --sidebar: #ffffff;
-    --header: rgba(255, 255, 255, 0.7);
+    --header: rgba(255, 255, 255, 0.68);
 
     /* Text */
-    --text-primary: #111827;
-    --text-secondary: #6b7280;
-    --text-muted: #9ca3af;
+    --text-primary: #08122e;
+    --text-secondary: #526071;
+    --text-muted: #8a94a6;
     --text-inverse: #ffffff;
 
     /* Brand */
-    --primary: #ff6b4a;
-    --primary-hover: #ff825f;
-    --accent: #ff9f80;
+    --primary: #08b7ad;
+    --primary-hover: #0ecfc4;
+    --primary-dark: #08968f;
+
+    --accent: #12d6cb;
+    --accent-soft: #dff9f7;
+
+    --secondary: #0b1633;
+    --secondary-hover: #132046;
+
+    /* Status */
+    --success: #14b86a;
+    --warning: #ffb547;
+    --danger: #ff5d5d;
+    --info: #35a2ff;
 
     /* Borders */
-    --border: #e5e7eb;
-    --border-light: #f1f5f9;
+    --border: #dce6ea;
+    --border-light: #edf3f5;
+    --border-strong: #c9d5db;
 
-    /* Effects */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.12);
+    /* Shadows */
+    --shadow-sm: 0 2px 6px rgba(8, 22, 46, 0.04);
+    --shadow-md: 0 10px 25px rgba(8, 22, 46, 0.08);
+    --shadow-lg: 0 20px 45px rgba(8, 22, 46, 0.14);
 
     /* Glass */
-    --glass: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.4);
+    --glass: rgba(255, 255, 255, 0.65);
+    --glass-border: rgba(255, 255, 255, 0.35);
 
     /* Radius */
-    --radius-sm: 10px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
 
     /* Animation */
     --transition: all 0.3s ease;
+
+    /* Grid */
+    --grid-dot: rgba(8, 183, 173, 0.12);
   }
 
-  /* =========================
-     DARK THEME
-  ========================= */
   [data-theme="dark"] {
     /* Backgrounds */
-    --bg: #0a0f14;
-    --bg-app: #0d141b;
-    --bg-primary: #111827;
-    --bg-secondary: #1a2330;
-    --bg-chat: #0f1720;
-    --bg-active: #1e293b;
+    --bg: #071018;
+    --bg-app: #09131d;
+    --bg-primary: #0d1724;
+    --bg-secondary: #101d2c;
+    --bg-chat: #0a1420;
+    --bg-active: #122132;
 
     /* Layout */
-    --nav-bar: rgba(17, 24, 39, 0.75);
-    --sidebar: #111827;
-    --header: rgba(17, 24, 39, 0.7);
+    --nav-bar: rgba(10, 20, 32, 0.76);
+    --sidebar: #0d1724;
+    --header: rgba(10, 20, 32, 0.7);
 
     /* Text */
-    --text-primary: #f3f4f6;
-    --text-secondary: #9ca3af;
-    --text-muted: #6b7280;
-    --text-inverse: #111827;
+    --text-primary: #f5f9ff;
+    --text-secondary: #a3b1c2;
+    --text-muted: #6f8096;
+    --text-inverse: #08122e;
 
     /* Brand */
-    --primary: #ff6b4a;
-    --primary-hover: #ff825f;
-    --accent: #ff9f80;
+    --primary: #11cfc3;
+    --primary-hover: #29e2d8;
+    --primary-dark: #0fa69d;
+
+    --accent: #59f1e7;
+    --accent-soft: rgba(17, 207, 195, 0.12);
+
+    --secondary: #f5f9ff;
+    --secondary-hover: #d9e4ff;
+
+    /* Status */
+    --success: #1fd67d;
+    --warning: #ffbe5c;
+    --danger: #ff7373;
+    --info: #57b5ff;
 
     /* Borders */
-    --border: #243041;
-    --border-light: #1e293b;
+    --border: #1b2a3d;
+    --border-light: #162232;
+    --border-strong: #24364b;
 
-    /* Effects */
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.35);
-    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.45);
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.22);
+    --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.38);
+    --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.52);
 
     /* Glass */
-    --glass: rgba(17, 24, 39, 0.6);
+    --glass: rgba(13, 23, 36, 0.58);
     --glass-border: rgba(255, 255, 255, 0.05);
 
     /* Radius */
-    --radius-sm: 10px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
 
     /* Animation */
     --transition: all 0.3s ease;
+
+    /* Grid */
+    --grid-dot: rgba(17, 207, 195, 0.12);
   }
 }
