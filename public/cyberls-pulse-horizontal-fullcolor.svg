@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<svg viewBox="0 0 280 80" width="280" height="80" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CyberLS">
+  <title>CyberLS</title>
+  <defs>
+  
+</defs>
+  <path d="M40 8 L66 18 L66 44 Q66 60 40 72 Q14 60 14 44 L14 18 Z" fill="#0A1628"></path>
+<path d="M16 40 L28 40 L32 44 L38 28 L44 52 L48 32 L52 40 L64 40" stroke="#00D4AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+<text x="100" y="54" font-family="&#39;Space Grotesk&#39;,-apple-system,BlinkMacSystemFont,Arial,sans-serif" font-weight="700" font-size="38" letter-spacing="-1.5"><tspan fill="#0A1628">Cyber</tspan><tspan fill="#00D4AA">LS</tspan></text>
+</svg>
